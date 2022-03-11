@@ -1,0 +1,47 @@
+@import "../fonts/Poppits/stylesheet.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import "../libs/fontello/css/fontello.css";
+@import "enhancers";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Poppins,sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+
+}
+.container{
+  width: 100%;
+  max-width: 1176px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.content{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.burger{
+  display: none;
+}
+
+
+
+
+
+@import "btn";
+@import "header";
+@import "main";
+@import "options";
+@import "creative";
+@import "product";
+@import "email";
+@import "fonts";
+@import "footer";
+@import "overlay";
+@import "overlay__second";
+@import "media";
+@import "map";

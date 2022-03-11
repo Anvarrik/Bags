@@ -1,0 +1,10 @@
+.btn{
+  width: 134px;
+  height: 49px;
+  background: #F59B00;
+  border-radius: 5px;
+border: none;
+  cursor: pointer;
+    @include text(500, 16px, 120%, #fff);
+    text-transform: capitalize;
+}

@@ -1,0 +1,43 @@
+.creative {
+  padding-bottom: 130px;
+
+
+  &__row {
+    display: flex;
+    column-gap: 100px;
+
+  }
+
+  &__second {
+    margin-top: 83.78px;
+
+    &__text {
+      @include text(500, 20px, 150%, #F59B00);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      @include text(bold, 31px, 140%, #2F2F2F);
+      text-transform: capitalize;
+
+    }
+
+    &__paragraph {
+      @include text(normal, 16px, 160%, #2F2F2F);
+      text-transform: capitalize;
+      opacity: 0.9;
+      margin: 24px 0 35px;
+    }
+
+
+  }
+
+  &__first {
+    position: relative;
+    margin-left: 110px;
+
+
+  }
+}
+

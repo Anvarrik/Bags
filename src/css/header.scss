@@ -1,0 +1,38 @@
+.header{
+  background: #2F2F2F;
+  padding: 30px  0;
+  position: absolute;
+  width: 100%;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    &__list{
+      display: flex;
+      column-gap: 40px;
+      &__items{
+
+       &__link{
+         @include text(normal, 16px, 160%, #fff);
+           text-transform: capitalize;
+         opacity: 0.6;
+         transition: .7s;
+
+         &:hover{
+           color: blue;
+           transition: .7s;
+         }
+       }
+
+      }
+    }
+    &__button{
+      margin-left: 90px;
+
+
+    }
+  }
+}

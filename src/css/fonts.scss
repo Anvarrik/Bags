@@ -1,0 +1,9 @@
+.fonts {
+  padding-bottom: 130px;
+  &__row {
+    display: flex;
+    column-gap: 35px;
+    cursor: pointer;
+
+  }
+}

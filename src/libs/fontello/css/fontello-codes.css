@@ -1,0 +1,4 @@
+
+.bb-phone:before { content: '\e800'; } /* '' */
+.bb-instagram:before { content: '\f16d'; } /* '' */
+.bb-telegram:before { content: '\f2c6'; } /* '' */

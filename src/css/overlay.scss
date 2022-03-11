@@ -1,0 +1,130 @@
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: #00000050;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  .popup {
+    width: 600px;
+    height: 700px;
+    background: url("../images/popup img.png") center/cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+&__block{
+  display: none;
+}
+    &__close {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      top: 0;
+      right: -80px;
+
+      &::before {
+        content: '';
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        transform: rotate(-45deg);
+
+      }
+
+      &::after {
+        content: '';
+        width: 3px;
+        height: 100%;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
+    }
+&__top{
+  margin-bottom: 80px;
+  &__title{
+    @include text(bold, 46px, 120%, #F59B00);
+    text-transform: capitalize;
+    padding: 60px 80px;
+  }
+}
+    &__bot{
+      margin: 0 65px;
+      &__reg{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        //padding-bottom: 30px;
+
+        input{
+          width: 500px;
+          height: 70px;
+          background-color: #F59B00;
+          border-radius: 20px;
+          border: none;
+          outline: none;
+          padding-left: 20px;
+        }
+        &__btn{
+          width: 200px;
+          height: 50px;
+          background-color: #F59B00;
+          margin-left: 150px;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+          @include text(500, 16px, 120%, #fff);
+          margin-bottom: 30px;
+         display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    &__thanks{
+      display: none;
+      &__top{
+        text-align: center;
+        margin-top: 200px;
+        h3{
+          font-size: 50px;
+          transition: .8s;
+          &:hover{
+            color: red;
+            transition: .8s;
+          }
+        }
+      }
+      &__bot{
+        p{
+          @include text(normal, 22px, 160%, #000);
+          text-transform: capitalize;
+          opacity: 0.7;
+          margin: 50px 0;
+          text-align: center;
+          letter-spacing: 3px;
+        }
+        .popup__thanks{
+          width: 200px;
+          height: 60px;
+      display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 200px;
+        }
+      }
+    }
+  }
+
+}
